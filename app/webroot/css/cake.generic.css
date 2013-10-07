@@ -1,0 +1,43 @@
+@font-face {
+     font-family: "Helvetica Neue Light";
+     src: local('Helvetica Neue Light'),
+          url('/assets/font/HelveticaNeueLight.ttf');  
+}
+body{
+    min-width: 700px;
+    background-color: #242424;
+    font-family: "Helvetica Neue Light", serif;
+    color: #ffffff;
+    margin: 0 auto;
+    font-size: 24px;
+}
+#main_container{
+    height: 100%;
+    text-align: left;
+}
+#header{
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#header span{
+    font-size: 36px;
+}
+#left_sidebar{
+    background-color: #3e4143;
+    width: 17%;
+    min-height: 500px;
+    padding-left: 5px;
+    display: inline-block;
+}
+#menu_list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 26px;
+}
+#content{
+    vertical-align: top;
+    width: 81%;
+    display: inline-block;
+}
