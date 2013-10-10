@@ -6,14 +6,36 @@
 body{
     min-width: 700px;
     background-color: #242424;
+    background-image: url('/img/background.jpg');
     font-family: "Helvetica Neue Light", serif;
     color: #ffffff;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 20px;
+}
+h1{
+    font-weight: normal;
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-weight: normal;
+    font-style: normal;
+    font-size: 36px;
+    padding: 0;
+    margin: 0;
+}
+th{
+    font-weight: normal;
+}
+a{
+    color: #7ba39c;
+    text-decoration: none;
 }
 #main_container{
     height: 100%;
     text-align: left;
+    min-width: 820px;
 }
 #header{
     height: 50px;
@@ -25,7 +47,7 @@ body{
 }
 #left_sidebar{
     background-color: #3e4143;
-    width: 17%;
+    width: 150px;
     min-height: 500px;
     padding-left: 5px;
     display: inline-block;
@@ -38,6 +60,12 @@ body{
 }
 #content{
     vertical-align: top;
-    width: 81%;
+    width: 650px;
     display: inline-block;
+}
+#post_display{
+    width: 100%;
+}
+#post_display th{
+       
 }

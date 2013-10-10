@@ -1,23 +1,10 @@
-<?php
-/**
- *
- * PHP 5
- *
- * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
- * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- *
- * Licensed under The MIT License
- * For full copyright and license information, please see the LICENSE.txt
- * Redistributions of files must retain the above copyright notice.
- *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- * @license       http://www.opensource.org/licenses/mit-license.php MIT License
- */
+<?php/*
+TODO:
+- enable mod rewrite
+- plug in font
+- apply background image
+*/?>
 
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,15 +13,11 @@
         KirkaBlog
 	</title>
 	<?php
-		echo $this->Html->meta('icon');
-
+        echo $this->Html->meta('icon', $this->Html->url('/files/favicon.ico'));
 		echo $this->Html->css('cake.generic');
-
         echo $this->Html->script('jquery.js');
         echo $this->Html->script('jquery.color.js');
         echo $this->Html->script('kirkablog.start.js');
-
-
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
@@ -43,20 +26,19 @@
 <body>
     <div id="main_container">
         <div id="header">
-            <span>KirkaBlog - Dead Simple Blogging Engine</span>
+            <h2>KirkaBlog - Dead Simple Blogging Engine</h2>
         </div>
         <div id="left_sidebar">
             <ul id="menu_list">
-                <li>home</li>
-                <li>blog</li>
-                <li>resume</li>
-                <li>schedule</li>
-                <li>contact</li>
+                <li><a href="/">home</a></li>
+                <li><a href="/posts/index">blog</a></li>
+                <li><a href="#">resume</a></li>
+                <li><a href="#">schedule</a></li>
+                <li><a href="#">contact</a></li>
             </ul>
         </div>
         <div id="content">
 			<?php echo $this->Session->flash(); ?>
-
 			<?php echo $this->fetch('content'); ?>
 		</div>
     </div>
